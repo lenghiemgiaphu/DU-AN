@@ -22,7 +22,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 # QUAN TRỌNG: đọc key từ biến môi trường — KHÔNG gắn cứng key trong code.
 # Trước khi chạy: export GEMINI_API_KEY="key_moi_cua_ban" (Linux/macOS)
 #                 hoặc $env:GEMINI_API_KEY="key_moi_cua_ban" (PowerShell)
-GOOGLE_API_KEY = "AQ.Ab8RN6Lebg-Ojlqw6sgbFEZtRIbEpFKOawv_DWnChs6_NRQkcA"
+GOOGLE_API_KEY = "AQ.Ab8RN6I0gAjpLFDt-eGtfWi7rpNj8DxbSwLUwPPRhJmiDD9BOg"
 
 if not GOOGLE_API_KEY:
     print("⚠️  Chưa đặt biến môi trường GEMINI_API_KEY — các tính năng OCR và kiểm tra "
