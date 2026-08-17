@@ -4,3 +4,4 @@ pillow
 google-genai
 openai
 edge-tts
+gunicorn
