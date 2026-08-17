@@ -23,8 +23,8 @@ def check_drug_interaction(old_drugs: str, new_drugs: str, api_key: str) -> str:
 
     if not old_drugs.strip() or not new_drugs.strip():
         return "Vui lòng cung cấp đầy đủ thông tin thuốc đang dùng và thuốc mới để kiểm tra."
-API_KEY = AQ.Ab8RN6I0gAjpLFDt-eGtfWi7rpNj8DxbSwLUwPPRhJmiDD9BOg
-    client = genai.Client(api_key="API_KEY")
+
+    client = genai.Client(api_key="AQ.Ab8RN6I0gAjpLFDt-eGtfWi7rpNj8DxbSwLUwPPRhJmiDD9BOg")
 
     prompt = f"""Bạn là dược sĩ lâm sàng AI hỗ trợ người cao tuổi tại Việt Nam.
 
