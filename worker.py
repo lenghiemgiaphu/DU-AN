@@ -6,11 +6,13 @@ import edge_tts
 
 # Khởi tạo OpenAI Client
 
-client = OpenAI(
-    api_key="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"
-)
+openai_api_key = os.environ.get("OPENAI_API_KEY")
 
+if not openai_api_key:
+    print("⚠️  Chưa đặt biến môi trường OPENAI_API_KEY!")
 
+# Khởi tạo OpenAI Client chuẩn
+client = OpenAI(api_key=openai_api_key)
 
 def speech_to_text(audio_binary):
     """
