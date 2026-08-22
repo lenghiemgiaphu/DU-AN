@@ -14,7 +14,7 @@ if str(CURRENT_DIR) not in sys.path:
 
 # 2. Import các module xử lý AI (OCR, kiểm tra DDI, giọng nói)
 from ocr_engine import process_handwriting_ocr, make_tts_friendly, parse_ocr_json
-from gemini_ai import check_drug_interaction
+from ocr_engine import check_drug_interaction
 from worker import speech_to_text, text_to_speech, openai_process_message, generate_health_memo
 
 app = Flask(__name__)
